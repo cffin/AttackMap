@@ -1,0 +1,138 @@
+.application {
+  font-family: 'Inter';
+}
+
+//=========== Datatable===========
+table.v-datatable {
+  // Button
+  .v-btn {
+    width: 20px;
+    height: 20px;
+    min-width: 0px;
+    margin-left: 0px;
+  }
+  // td
+  tbody tr td {
+    height: 38px;
+  }
+}
+//Rows per page
+.v-datatable {
+  .v-datatable__actions {
+    justify-content: space-between;
+    .v-datatable__actions__select {
+      justify-content: flex-start;
+      margin-left: 24px;
+      .v-select {
+        margin-left: 12px;
+      }
+      .v-input__slot::before {
+        display: none;
+      }
+    }
+    .v-datatable__actions__pagination {
+      margin-right: 24px;
+    }
+  }
+  .v-alert {
+    height: 40px;
+  }
+}
+//=========== v-card===========
+.v-dialog .v-card__text {
+  padding: 0px 16px;
+}
+.v-card__actions {
+  padding: 25px 40px;
+}
+//=========== vue-file-agent===========
+.vue-file-agent {
+  height: 300px;
+  padding: 18px 12px 0px 12px;
+  .file-preview-wrapper::before {
+    background-color: transparent;
+  }
+  .file-preview-new {
+    ::before {
+      background-color: transparent;
+    }
+    svg {
+      margin-top: 22.5%;
+    }
+  }
+}
+.grid-block-wrapper .grid-block {
+  width: 100%;
+}
+// Button
+.v-btn__content {
+  text-transform: none;
+}
+
+// ===========Navigationbar===========
+// tabs
+.tabs {
+  ::after {
+    background-color: #d3dae6;
+    bottom: 0;
+    content: '';
+    height: 1px;
+    left: 0;
+    position: absolute;
+    right: 0;
+  }
+  .tabs__tab {
+    text-transform: capitalize;
+    font-size: 16px;
+    .tabs__tab--active {
+      color: #006bb4;
+      opacity: 1;
+    }
+  }
+}
+// breadcrumbs
+.breadcrumbs.v-breadcrumbs {
+  li:nth-child(even) {
+    padding: 0 8px;
+  }
+  li:nth-child(2n) {
+    padding: 0 8px;
+  }
+  li a {
+    color: #69707d;
+  }
+  li:last-child a {
+    color: #343741;
+  }
+}
+
+//Dark Mode theme
+.application.theme--dark.application {
+  background-color: #1a1b20;
+  .v-list.theme--dark {
+    background-color: #1a1b20;
+  }
+  .v-card.v-sheet.theme--dark {
+    background-color: #1a1b20;
+    border: 1px solid #343741;
+  }
+  .v-datatable.v-table.theme--dark,
+  .v-datatable__actions {
+    background-color: #1a1b20;
+  }
+
+  .breadcrumbs.v-breadcrumbs {
+    li a {
+      color: #98a2b3;
+    }
+    li:last-child a {
+      color: #dfe5ef;
+    }
+  }
+  .tabs__tab--active {
+    color: #1ba9f5;
+  }
+  .v-tabs.tabs ::after {
+    background-color: #343741;
+  }
+}
